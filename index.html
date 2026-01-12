@@ -1,134 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <nav class="navbar container">
-            <a href="#" class="logo">Portfolio</a>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+      <nav class="navbar container">
+        <a href="#" class="logo">Portfolio</a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#english-skill">English</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <section class="hero container">
-            <div class="hero-content">
-                <span class="greeting">Hi, I'm</span>
-                <h1 class="name">Anu Bramikha</h1>
-                <h2 class="role">Full Stack Developer</h2>
-                <p class="tagline">I turn ideas into simple, useful websites that help people.</p>
-                <a href="#contact" class="btn btn-primary">Get in Touch</a>
+      <section class="hero container">
+        <div class="hero-content">
+          <span class="greeting">Hi, I'm</span>
+          <h1 class="name">Anu Bramikha</h1>
+          <h2 class="role">Full Stack Developer</h2>
+          <p class="tagline">
+            I turn ideas into simple, useful websites that help people.
+          </p>
+          <a href="#contact" class="btn btn-primary">Get in Touch</a>
+        </div>
+        <div class="hero-image">
+          <img src="./assets/photo.png" alt="Anu Bramikha" />
+        </div>
+      </section>
+
+      <section id="about" class="section container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <p>
+            Hi, I'm Anu Bramikha. I have completed my 12th standard and I am
+            currently studying at Freshworks STS Software Academy. Here, I have
+            developed skills in HTML, CSS, JavaScript, Python, FastAPI, and
+            PostgreSQL. I am learning how to build websites and backend
+            applications and understand how real-world software works. I am
+            passionate about continuous learning and aim to become a Full Stack
+            Developer.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <h2 class="section-title">My Skills</h2>
+
+        <div class="skills-container">
+          <div class="skill">
+            <span>HTML</span>
+            <div class="skill-bar">
+              <div class="skill-level html">70%</div>
             </div>
-            <div class="hero-image">
-                <img src="./assets/photo.png" alt="Anu Bramikha">
+          </div>
+
+          <div class="skill">
+            <span>CSS</span>
+            <div class="skill-bar">
+              <div class="skill-level css">70%</div>
             </div>
-        </section>
+          </div>
 
-        <section id="about" class="section container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <p>
-                    I am a passionate Full Stack Developer with a strong interest in building scalable backend systems
-                    and clean, user-friendly interfaces. I enjoy learning new technologies and applied them to solve
-                    real-world problems through well-structured and efficient applications.
-                </p>
+          <div class="skill">
+            <span>JavaScript</span>
+            <div class="skill-bar">
+              <div class="skill-level js">30%</div>
             </div>
-        </section>
+          </div>
 
-        <section id="skills" class="section container">
-            <h2 class="section-title">My Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Frontend</h3>
-                    <div class="tags">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Backend</h3>
-                    <div class="tags">
-                        <span>Python</span>
-                        <span>FastAPI</span>
-                        <span>PostgreSQL</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Design Tools</h3>
-                    <div class="tags">
-                        <span>Figma</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Learning</h3>
-                    <div class="tags">
-                        <span>JavaScript</span>
-                    </div>
-                </div>
+          <div class="skill">
+            <span>Python Problem Solving</span>
+            <div class="skill-bar">
+              <div class="skill-level python">60%</div>
             </div>
-        </section>
+          </div>
 
-        <section id="projects" class="section container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-info">
-                        <h3>Curiosity Code</h3>
-                        <p>Curiosity Code is a static e-learning website created to share learning content
-        in a simple and organized way. The website has a clean design and is easy to use.. 
-                        </p>
-                        <a href="https://bramikha7.github.io/static_web_project/" target="_blank" class="link-text">View on GitHub
-                            &rarr;</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-info">
-                        <h3>Full stack website (Paw Care)</h3>
-                        <p> A full-stack web application currently under development to manage volunteers,
-        NGOs, donations, and case reports. Backend is being built using FastAPI and PostgreSQL,
-        focusing on role-based access and real-time data handling.</p>
-                    </div>
-                </div>
+          <div class="skill">
+            <span>FastAPI</span>
+            <div class="skill-bar">
+              <div class="skill-level fastapi">55%</div>
             </div>
-        </section>
+          </div>
 
-        <section id="contact" class="section container contact-section">
-            <h2 class="section-title">Let's Connect</h2>
-            <div class="contact-links">
-                <a href="mailto:anu@example.com" class="contact-item">
-                    <span class="icon"></span> bramikhabennyanu@gmail.com
-                </a>
-                <a href="https://github.com/Bramikha7" target="_blank" class="contact-item">
-                    <span class="icon"></span> github.com/
-                </a>
-                <a href="https://www.linkedin.com/in/anu-bramikha-91b9752b1/" target="_blank" class="contact-item">
-                    <span class="icon"></span> linkedin.com/
-                </a>
+          <div class="skill">
+            <span>PostgreSQL</span>
+            <div class="skill-bar">
+              <div class="skill-level postgres">60%</div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="english-skill">
+        <h2 class="section-title">English Proficiency</h2>
+
+        <div class="english-container">
+          <div class="english-skill">
+            <span>Reading</span>
+            <div class="bar">
+              <div class="fill reading">55.5%</div>
+            </div>
+          </div>
+
+          <div class="english-skill">
+            <span>Listening</span>
+            <div class="bar">
+              <div class="fill listening">45%</div>
+            </div>
+          </div>
+
+          <div class="english-skill">
+            <span>Writing</span>
+            <div class="bar">
+              <div class="fill writing">52%</div>
+            </div>
+          </div>
+
+          <div class="english-skill">
+            <span>Speaking</span>
+            <div class="bar">
+              <div class="fill speaking">47%</div>
+            </div>
+          </div>
+
+          <p class="efset-note">
+            EF SET Score: <strong>50/100</strong> — B1 Intermediate
+          </p>
+        </div>
+      </section>
+      <section id="project" class="project">
+        <h2>My Projects</h2>
+        <div class="project_cards">
+          <div class="card">
+            <img src="./assets/code.png" alt="Campaign 1" />
+            <h3>Curiosity Code</h3>
+            <p>I build this static website with only using HTML and CSS</p>
+            <a
+              href="https://bramikha7.github.io/static_web_project/"
+              class="link"
+              >View On Github</a
+            >
+          </div>
+          <div class="card">
+            <img src="./assets/full.png" alt="Campaign 2" />
+            <h3>Full Stack Project(Paw Care)</h3>
+            <p>
+              A dog vaccination donation platform that enables secure
+              contributions to support immunization programs, improve animal
+              health and public Health.
+            </p>
+            <a href="#" class="link"></a>
+          </div>
+        </div>
+      </section>
+      <section id="project" class="project">
+        <h2>Life skills Projects</h2>
+        <div class="project_cards">
+          <div class="card">
+            <img src="./assets/website.png" alt="Campaign 2" />
+            <h3>Air Step</h3>
+            <p>We Create a Solution for a foot Rashes</p>
+            <p>HTML and CSS</p>
+            <a href="https://airstepreleif.netlify.app/" class="link"
+              >View the Website</a
+            >
+          </div>
+          <div class="card">
+            <img src="./assets/squad.jpeg" alt="Campaign 3" />
+            <h3>WorkSpace Study</h3>
+            <p>
+              A presentation we made on workplace study was mainly helpful to
+              understand about the roles in IT industry.Through this we learnt
+              about networking, collecting information and documentation.
+            </p>
+            <a href="#" class="link"></a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section container contact-section">
+        <h2 class="section-title">Let's Connect</h2>
+        <div class="contact-links">
+          <a href="mailto:anu@example.com" class="contact-item">
+            <span class="icon"></span> bramikhabennyanu@gmail.com
+          </a>
+          <a
+            href="https://github.com/Bramikha7"
+            target="_blank"
+            class="contact-item"
+          >
+            <span class="icon"></span> github.com/
+          </a>
+          <a
+            href="https://www.linkedin.com/in/anu-bramikha-91b9752b1/"
+            target="_blank"
+            class="contact-item"
+          >
+            <span class="icon"></span> linkedin.com/
+          </a>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Anu Bramikha. All rights reserved.</p>
-        </div>
+      <div class="container">
+        <p>2026 Anu Bramikha Portfolio.</p>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
