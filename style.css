@@ -239,7 +239,7 @@ ul {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
   gap: 32px;
-  margin-left: 60px;
+  margin-left: 200px;
 }
 
 .skill {
@@ -264,8 +264,8 @@ ul {
 
 .skill-level {
   height: 100%;
-  background-color: #2563eb;
-  color: white;
+  background-color: white;
+  color: black;
   font-size: 0.9rem;
   font-weight: 500;
   display: flex;
@@ -390,8 +390,8 @@ ul {
 
 .fill {
   height: 100%;
-  background-color: #2563eb;
-  color: white;
+  background-color: White;
+  color: black;
   font-size: 0.85rem;
   display: flex;
   align-items: center;
