@@ -208,13 +208,13 @@ ul {
 .collageitem {
   position: relative;
   overflow: hidden;
-  background: white;
+  background: black;
   border-radius: 50% !important;
   aspect-ratio: 1 / 1;
   width: 140px;
   box-shadow:
     0 10px 25px rgba(0, 0, 0, 0.3),
-    inset 0 0 0 4px white,
+    inset 0 0 0 4px black,
     0 0 0 1px #9d1ef7;
   transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
   display: flex;
@@ -257,7 +257,7 @@ ul {
   object-fit: contain;
   width: 85%;
   height: 85%;
-  background: white;
+  background:black;
 }
 
 .collageitem:hover {
@@ -408,11 +408,11 @@ ul {
 }
 
 .fastapi {
-  width: 55%;
+  width: 35%;
 }
 
 .postgres {
-  width: 60%;
+  width: 45%;
 }
 
 
