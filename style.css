@@ -387,11 +387,11 @@ ul {
 }
 
 .html {
-  width: 70%;
+  width: 60%;
 }
 
 .css {
-  width: 70%;
+  width: 60%;
 }
 
 .js {
@@ -399,7 +399,7 @@ ul {
 }
 
 .python {
-  width: 60%;
+  width: 70%;
 }
 
 .fastapi {
